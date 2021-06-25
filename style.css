@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.header {
+  padding-top: 30px;
+  background-color: rgb(255, 255, 255);
+  width: 900px;
+  height: 750px;
+  margin: 0 auto;
+  border: 3px solid;
+  border-top: 0;
+}
+
+.boxes {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.raz {
+  background-color: transparent;
+  -moz-appearance: textfield;
+  outline: none;
+  border: 2px solid;
+  border-radius: 5px;
+}
+.raz::-webkit-inner-spin-button {
+  display: none;
+}
+
+.rez {
+  background-color: transparent;
+  -moz-appearance: textfield;
+  outline: none;
+  border: 2px solid;
+  border-radius: 5px;
+}
+.rez::-webkit-inner-spin-button {
+  display: none;
+}
+
+.inoutbox {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.input__box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.radiobox {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  margin-top: 10px;
+}
+
+.radio__nai {
+  border: 2px solid;
+  width: 300px;
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+  margin-left: 5px;
+  border-radius: 15px;
+}
+
+.radiobtn {
+  margin: 0 auto;
+  padding-top: 5px;
+}
+
+.radio__scr {
+  border: 2px solid;
+  width: 300px;
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+  margin-left: 5px;
+  border-radius: 15px;
+}
+
+.radio__prs {
+  border: 2px solid;
+  width: 300px;
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 20px;
+  margin-left: 5px;
+  border-radius: 15px;
+}
+
+.radio__num {
+  border: 2px solid;
+  width: 300px;
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 20px;
+  margin-left: 5px;
+  border-radius: 15px;
+}
+
+.radio__rou {
+  border: 2px solid;
+  width: 600px;
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 20px;
+  margin-left: 5px;
+  border-radius: 15px;
+}
+
+.title {
+  position: relative;
+  top: -15px;
+  right: -15px;
+  border: 2px transparent;
+  width: 80px;
+  background-color: white;
+  height: 25px;
+}
+
+.titlenum {
+  position: relative;
+  top: -15px;
+  right: -15px;
+  border: 2px transparent;
+  width: 110px;
+  background-color: white;
+  height: 25px;
+}
+
+.titlenai {
+  position: relative;
+  top: -15px;
+  right: -15px;
+  border: 2px transparent;
+  width: 40px;
+  background-color: white;
+  height: 25px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parsing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <header class="header">
+
+        <div class="boxes">
+            <ul class="input__box">
+                <li class="inoutbox">
+                    <div class="number__box">
+                        <input type="number" placeholder="Number" class="raz" id="numbers" onkeyup="myFunc(this)" >
+                    </div>
+                </li>
+                <li class="inoutbox">
+                    <div class="converted__box">
+                        <input type="text" placeholder="Converted" class="rez" id="numbers1">
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+        <ul class="radiobox">
+            <li class="radio__nai">
+                <p class="titlenai">NAI</p>
+                <p><input type="radio" name="NAI" class="radiobnt" checked value="0b1">National</p>
+                <p><input type="radio" name="NAI" class="radiobnt" value="0b10">Unknown</p>
+                <p><input type="radio" name="NAI" class="radiobnt" value="0b11">National Significant</p>
+                <p><input type="radio" name="NAI" class="radiobnt" value="0b100">International</p>
+            </li>
+            <li class="radio__scr">
+                <p class="title">Screening</p>
+                <p><input type="radio" name="Screening" class="radiobnt" value="Not Verified">Not Verified</p>
+                <p><input type="radio" name="Screening" class="radiobnt" value="Verified and passed">Verified and passed</p>
+                <p><input type="radio" name="Screening" class="radiobnt" value="Vrified and failed">Vrified and failed</p>
+                <p><input type="radio" name="Screening" class="radiobnt" checked value="Network provided">Network provided</p>
+            </li>
+            <li class="radio__prs">
+                <p class="title">Presentation</p>
+                <p><input type="radio" name="Presentation" class="radiobnt" checked value="Allowed">Allowed</p>
+                <p><input type="radio" name="Presentation" class="radiobnt" value="Restricted">Restricted</p>
+                <p><input type="radio" name="Presentation" class="radiobnt" value="Not available">Not available</p>
+            </li>
+            <li class="radio__num">
+                <p class="titlenum">Numbering plan</p>
+                <p><input type="radio" name="Numbering" class="radiobnt" checked value="ISDN">ISDN</p>
+                <p><input type="radio" name="Numbering" class="radiobnt" value="Daya">Daya</p>
+                <p><input type="radio" name="Numbering" class="radiobnt" value="Telex">Telex</p>
+            </li>
+            <li class="radio__rou">
+                <p class="title">Routing</p>
+                <p><input type="radio" name="Routing" class="radiobnt" value="Allowed" checked value="Allowed">Allowed</p>
+                <p><input type="radio" name="Routing" class="radiobnt" value="Allowed" value="Not allowed">Not allowed</p>
+            </li>
+        </ul>
+    </header>
+    <script src="index.js">
+
+    </script>
+</body>
+</html>

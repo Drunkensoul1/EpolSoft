@@ -15,7 +15,7 @@
             <ul class="input__box">
                 <li class="inoutbox">
                     <div class="number__box">
-                        <input type="number" placeholder="Number" class="raz" id="numbers" onkeyup="myFunc(this)" >
+                        <input type="number" placeholder="Number" class="raz" id="numbers" onkeyup="myFunc()" >
                     </div>
                 </li>
                 <li class="inoutbox">
@@ -30,34 +30,34 @@
         <ul class="radiobox">
             <li class="radio__nai">
                 <p class="titlenai">NAI</p>
-                <p><input type="radio" name="NAI" class="radiobnt" checked value="0b1">National</p>
-                <p><input type="radio" name="NAI" class="radiobnt" value="0b10">Unknown</p>
-                <p><input type="radio" name="NAI" class="radiobnt" value="0b11">National Significant</p>
-                <p><input type="radio" name="NAI" class="radiobnt" value="0b100">International</p>
+                <p><input type="radio" id="nai1" name="NAI" class="radiobnt" checked value="0b1" onchange="myFunc()">National</p>
+                <p><input type="radio" id="nai2" name="NAI" class="radiobnt" value="0b10" onchange="myFunc()">Unknown</p>
+                <p><input type="radio" id="nai3" name="NAI" class="radiobnt" value="0b11" onchange="myFunc()">National Significant</p>
+                <p><input type="radio" id="nai4" name="NAI" class="radiobnt" value="0b100" onchange="myFunc()">International</p>
             </li>
             <li class="radio__scr">
                 <p class="title">Screening</p>
-                <p><input type="radio" name="Screening" class="radiobnt" value="Not Verified">Not Verified</p>
-                <p><input type="radio" name="Screening" class="radiobnt" value="Verified and passed">Verified and passed</p>
-                <p><input type="radio" name="Screening" class="radiobnt" value="Vrified and failed">Vrified and failed</p>
-                <p><input type="radio" name="Screening" class="radiobnt" checked value="Network provided">Network provided</p>
+                <p><input type="radio" id="scren1" name="Screening" class="radiobnt" value="0b0" onchange="myFunc()">Not Verified</p>
+                <p><input type="radio" id="scren2" name="Screening" class="radiobnt" value="0b1" onchange="myFunc()">Verified and passed</p>
+                <p><input type="radio" id="scren3" name="Screening" class="radiobnt" value="0b10" onchange="myFunc()">Vrified and failed</p>
+                <p><input type="radio" id="scren4" name="Screening" class="radiobnt" checked value="0b11" onchange="myFunc()">Network provided</p>
             </li>
             <li class="radio__prs">
                 <p class="title">Presentation</p>
-                <p><input type="radio" name="Presentation" class="radiobnt" checked value="Allowed">Allowed</p>
-                <p><input type="radio" name="Presentation" class="radiobnt" value="Restricted">Restricted</p>
-                <p><input type="radio" name="Presentation" class="radiobnt" value="Not available">Not available</p>
+                <p><input type="radio" id="pres1" name="Presentation" class="radiobnt" checked value="0b0000" onchange="myFunc()">Allowed</p>
+                <p><input type="radio" id="pres2" name="Presentation" class="radiobnt" value="0b100" onchange="myFunc()">Restricted</p>
+                <p><input type="radio" id="pres3" name="Presentation" class="radiobnt" value="0b1000" onchange="myFunc()">Not available</p>
             </li>
             <li class="radio__num">
                 <p class="titlenum">Numbering plan</p>
-                <p><input type="radio" name="Numbering" class="radiobnt" checked value="ISDN">ISDN</p>
-                <p><input type="radio" name="Numbering" class="radiobnt" value="Daya">Daya</p>
-                <p><input type="radio" name="Numbering" class="radiobnt" value="Telex">Telex</p>
+                <p><input type="radio" id="numb1" name="Numbering" class="radiobnt" checked value="0b10000" onchange="myFunc()">ISDN</p>
+                <p><input type="radio" id="numb2" name="Numbering" class="radiobnt" value="0b110000" onchange="myFunc()">Daya</p>
+                <p><input type="radio" id="numb3" name="Numbering" class="radiobnt" value="0b1000000" onchange="myFunc()">Telex</p>
             </li>
             <li class="radio__rou">
                 <p class="title">Routing</p>
-                <p><input type="radio" name="Routing" class="radiobnt" value="Allowed" checked value="Allowed">Allowed</p>
-                <p><input type="radio" name="Routing" class="radiobnt" value="Allowed" value="Not allowed">Not allowed</p>
+                <p><input type="radio" id="rou1" name="Routing" class="radiobnt" value="0b00000000" checked onchange="myFunc()">Allowed</p>
+                <p><input type="radio" id="rou2" name="Routing" class="radiobnt" value="0b10000000" onchange="myFunc()">Not allowed</p>
             </li>
         </ul>
     </header>
